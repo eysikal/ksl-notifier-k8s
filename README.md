@@ -1,7 +1,7 @@
-# ksl-notifier-k8s
+# KSL Notifier (k8s)
 Node app that scrapes KSL Classifieds. Deployed to Google Cloud via k8s.
 
-## Google Cloud Setup Steps
+### Google Cloud Setup Steps
 1. Set up Docker repository:
 ```
 gcloud artifacts repositories create ksl-notifier-repo --repository-format=docker --location=us-west3 --description="Docker repository"
@@ -23,4 +23,3 @@ gcloud config set compute/zone us-west3-b
 ```
 gcloud container clusters create ksl-notifier-cluster
 ```
-
